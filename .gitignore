@@ -216,5 +216,12 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# EasyChair: только локальное окружение и воспроизводимый кэш
+.uv-cache/
+data/cache/
+data/tmp/
+
+# Итоговые .xlsx в data/processed/ остаются доступными для Git
+
 # Streamlit
 .streamlit/secrets.toml

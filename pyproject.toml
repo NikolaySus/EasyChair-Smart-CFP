@@ -1,0 +1,31 @@
+[project]
+name = "easychair-smart-cfp"
+version = "0.1.0"
+description = "Сбор и подготовка EasyChair Smart CFP для ЛР-6"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "beautifulsoup4>=4.12,<5",
+    "lxml>=5,<7",
+    "openpyxl>=3.1,<4",
+    "pandas>=2.2,<4",
+    "pycountry>=24.6,<27",
+    "requests>=2.32,<3",
+    "xlsxwriter>=3.2,<4",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29,<8",
+    "jupyterlab>=4.3,<5",
+    "nbclient>=0.10,<1",
+    "nbformat>=5.10,<6",
+    "pytest>=8,<10",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
